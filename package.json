@@ -1,0 +1,58 @@
+{
+  "name": "@zto/cli",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Cli for zto",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "zto",
+    "cli"
+  ],
+  "files": [
+    "dist",
+    "cli"
+  ],
+  "bin": {
+    "zto": "bin/cli.js"
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "cli": "node ./bin/cli.js",
+    "release": "bumpp"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "execa": "^9.3.1",
+    "fs-extra": "^11.2.0",
+    "glob": "^11.0.0",
+    "@inquirer/prompts": "^5.3.8",
+    "nanospinner": "^1.1.0",
+    "picocolors": "^1.0.1",
+    "unconfig": "^0.5.5",
+    "date-fns": "^3.6.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.0",
+    "tsup": "^8.2.4",
+    "typescript": "^5.2.2",
+    "bumpp": "^9.5.2",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.9.0"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@9.1.4",
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=9.0"
+  }
+}
