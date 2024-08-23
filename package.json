@@ -28,7 +28,8 @@
     "dev": "tsup --watch",
     "build": "tsup",
     "cli": "node ./bin/cli.js",
-    "release": "bumpp"
+    "prepublishOnly": "pnpm build",
+    "release": "bumpp && pnpm publish"
   },
   "dependencies": {
     "commander": "^12.1.0",
