@@ -19,7 +19,7 @@ zto blog
 A quick command to generate blog posts.
 
 ```
-zto document
+zto docs
 ```
 
 ### Configuration
