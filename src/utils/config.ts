@@ -5,7 +5,7 @@ export interface ZtoConfig {
     dir?: string
   }
 
-  document?: {
+  docs?: {
     dir?: string
   }
 }
@@ -15,7 +15,7 @@ export interface ZtoInternalConfig {
     dir: string
   }
 
-  document: {
+  docs: {
     dir: string
   }
 }
@@ -32,7 +32,7 @@ export async function getConfig() {
       blog: {
         dir: 'apps/web/content/posts',
       },
-      document: {
+      docs: {
         dir: 'apps/web/content/documentation',
       },
     }
